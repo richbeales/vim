@@ -2,7 +2,7 @@
 # You may edit it if you're careful!
 
 # Value of 'encoding' when this file was written
-*encoding=utf-8
+*encoding=latin1
 
 
 # hlsearch on (H) or off (h):
@@ -14,9 +14,13 @@
 $
 
 # Command Line History (newest to oldest):
-:w
-:q
+:q!
 :wq
+:q
+:bd
+:BundleInstall
+:w
+:!git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 :help yankring
 :help y
 :w umount.sh
@@ -28,7 +32,6 @@ $
 :e index.php
 :e ../index.php
 :e ../include/
-:q!
 :'<,'>q
 :e login.html
 :w ~/tempdjango.py
@@ -60,53 +63,56 @@ $
 	        <p><a class='btn' href='/reviews/'>See more reviews &raquo;</a></p>
 	        </div>
 	        </div>
-"1	LINE	0
-	>>>>>>> master
+""1	LINE	0
+	"
 "2	LINE	0
+	"
+"3	LINE	0
+	
+"4	LINE	0
+	execute pathogen#infect() 
+	set runtimepath^=~/.vim/bundle/ctrlp.vim 
+"5	LINE	0
+	>>>>>>> master
+"6	LINE	0
 	<<<<<<< HEAD
 	        <state line="10" column="32" selection-start="321" selection-end="321" vertical-scroll-proportion="-10.25" vertical-offset="2241" max-vertical-offset="2445">
 	=======
-"3	LINE	0
+"7	LINE	0
 	>>>>>>> master
-"4	LINE	0
+"8	LINE	0
 	<<<<<<< HEAD
 	    <editor active="true" />
 	    <layout>
 	      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
 	      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 	=======
-"5	LINE	0
+"9	LINE	0
 	=======
 	            <state line="20" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="1.4705882" vertical-offset="0" max-vertical-offset="2340">
 	>>>>>>> master
-"6	LINE	0
-	<<<<<<< HEAD
-"7	LINE	0
-	        <p class="lead text-success">This month we're offering to pay for your DSA Theory Test (worth &pound;31) if you start learning with us and take at least 10 hours tuition.</p>
-"8	LINE	0
-	        <p>If you start learning with The Pass Lane and take at least 10 hours tuition, we will pay for your first DSA theory test (worth &pound;31)</p>
-"9	LINE	0
-	      </div>
 "a@	CHAR	0
-	irewÂ€kbviews/ldt2wwwwwi_p
-""-	CHAR	0
-	"&cmd=_notify-validate"
-
-# global variables:
+	irew€kbviews/ldt2wwwwwi_p
+"-	CHAR	0
+	"
 
 # File marks:
-'0  8  28  /nas/Home/rich/code/web/HHS/members/payment/notify.asp
-'1  17  0  /nas/Home/rich/code/web/code/qmh/django/booking/admin.py
-'2  602  10  /nas/Home/rich/code/web/code/tpl/flask/.idea/workspace.xml
-'3  4  20  /nas/Home/rich/code/web/staticonly/hgd/index.html
-'4  14  0  ~/Downloads/weddingspeech.txt
-'5  5  48  ~/umount.sh
-'6  5  0  ~/mount.sh
-'7  24  6  /nas/Home/rich/code/web/staticonly/tpl/pages/index.yaml
-'8  41  0  /nas/Home/rich/code/web/staticonly/tpl/pages/contact.yaml
-'9  12  0  /nas/Home/rich/code/web/staticonly/tpl/pages/prices.yaml
+'0  56  24  ~/.vimrc
+'1  54  4  ~/.vimrc
+'2  24  0  ~/.vimrc
+'3  1  0  ~/.vimrc
+'4  8  28  /nas/Home/rich/code/web/HHS/members/payment/notify.asp
+'5  17  0  /nas/Home/rich/code/web/code/qmh/django/booking/admin.py
+'6  602  10  /nas/Home/rich/code/web/code/tpl/flask/.idea/workspace.xml
+'7  4  20  /nas/Home/rich/code/web/staticonly/hgd/index.html
+'8  14  0  ~/Downloads/weddingspeech.txt
+'9  5  48  ~/umount.sh
 
 # Jumplist (newest first):
+-'  56  24  ~/.vimrc
+-'  54  4  ~/.vimrc
+-'  24  0  ~/.vimrc
+-'  1  0  ~/.vimrc
 -'  8  28  /nas/Home/rich/code/web/HHS/members/payment/notify.asp
 -'  1  0  /nas/Home/rich/code/web/HHS/members/payment/notify.asp
 -'  17  0  /nas/Home/rich/code/web/code/qmh/django/booking/admin.py
@@ -200,14 +206,40 @@ $
 -'  2  3  /nas/Home/rich/code/web/staticonly/.gitignore
 -'  1  0  /nas/Home/rich/code/web/staticonly/.gitignore
 -'  61  189  /nas/Home/rich/code/web/staticonly/tpl/pages/about_driving_instructor.yaml
--'  1  0  /nas/Home/rich/code/web/staticonly/tpl/sitemap.xml
--'  1  0  /nas/Home/rich/code/web/staticonly/tpl/pages/about_driving_instructor.yaml
--'  1  0  ~/.vimrc
--'  5  0  ~/.vimrc
--'  1  0  ~/tmp.py
--'  2  6  ~/.vimrc
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	"	56	24
+	^	56	33
+	.	56	0
+	+	25	25
+	+	24	39
+	+	24	0
+	+	27	16
+	+	26	0
+	+	27	0
+	+	26	0
+	+	24	0
+	+	1	0
+	+	23	0
+	+	1	0
+	+	28	0
+	+	32	8
+	+	31	0
+	+	36	0
+	+	15	0
+	+	17	0
+	+	21	0
+	+	24	0
+	+	51	0
+	+	56	0
+
+> ~/[Vundle] Installer
+	"	9	0
+	.	1	0
+	+	9	0
+	+	1	0
 
 > /nas/Home/rich/code/web/HHS/members/payment/notify.asp
 	"	8	28
@@ -454,18 +486,6 @@ $
 	^	2	4
 	.	2	3
 	+	2	3
-
-> ~/.vimrc
-	"	1	0
-	^	5	0
-	.	5	0
-	+	4	25
-	+	2	39
-	+	1	0
-	+	6	16
-	+	5	0
-	+	6	0
-	+	5	0
 
 > ~/tmp.py
 	"	1	0
